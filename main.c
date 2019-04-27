@@ -48,4 +48,5 @@ int		main(int argc, char **argv)
 	}
 	file_str = reader(argv);
 	result = all_tetri(file_str);
+	numerise(result);
 }

@@ -19,7 +19,7 @@ char	*search_tetri(char *field)
 	if (tetri_square(field))
 		return (tetri_square(field));
 	if (tetri_mushroom(field))
-		return (tetri_mushroom (field));
+		return (tetri_mushroom(field));
 	if (tetri_left_duck(field))
 		return (tetri_left_duck(field));
 	if (tetri_right_duck(field))
@@ -60,7 +60,6 @@ char	**all_tetri(char *result)
 		if (x == 1 && result[20] != '\0')
 			exit(1);
 		macro[count++] = ft_strdup(search_tetri(field));
-		printf("%s\n\n", macro[count - 1]);
 		if (field)
 			free(field);
 	}

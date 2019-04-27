@@ -21,7 +21,6 @@
 # include <string.h>
 # include <sys/wait.h>
 
-
 typedef struct	s_map
 {
 	int			size;
@@ -29,13 +28,14 @@ typedef struct	s_map
 	char		**map;
 }				t_map;
 
-char			**all_tetri(char *str);
-char			*tetri_left_duck(char *square);
-char			*tetri_right_duck(char *square);
-char			*tetri_left_horse(char *square);
-char			*tetri_right_horse(char *square);
-char			*tetri_stick(char *square);
-char			*tetri_square(char *square);
-char			*tetri_mushroom(char *square);
+char			**all_tetri(char *result);
+char			*tetri_left_duck(char *field);
+char			*tetri_right_duck(char *field);
+char			*tetri_left_horse(char *field);
+char			*tetri_right_horse(char *field);
+char			*tetri_stick(char *field);
+char			*tetri_square(char *field);
+char			*tetri_mushroom(char *field);
+void			numerise(char **result);
 
 #endif

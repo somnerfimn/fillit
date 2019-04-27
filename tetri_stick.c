@@ -28,13 +28,13 @@ static char	*tetri_stick0(char *field)
 static char	*tetri_stick90(char *field)
 {
 	if (ft_strcmp(field, "####\n....\n....\n....\n") == 0)
-		return("####");
+		return ("####");
 	if (ft_strcmp(field, "....\n####\n....\n....\n") == 0)
-		return("####");
+		return ("####");
 	if (ft_strcmp(field, "....\n....\n####\n....\n") == 0)
-		return("####");
+		return ("####");
 	if (ft_strcmp(field, "....\n....\n....\n####\n") == 0)
-		return("####");
+		return ("####");
 	return ("#");
 }
 
@@ -42,7 +42,7 @@ char		*tetri_stick(char *field)
 {
 	if (ft_strcmp(tetri_stick0(field), "#\n#\n#\n#") == 0)
 		return ("#\n#\n#\n#");
-	if (ft_strcmp (tetri_stick90(field), "####") == 0)
+	if (ft_strcmp(tetri_stick90(field), "####") == 0)
 		return ("####");
 	return (NULL);
 }

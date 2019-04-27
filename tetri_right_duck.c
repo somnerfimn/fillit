@@ -29,7 +29,7 @@ static char	*tetri_right_duck0(char *field)
 	return ("NULL");
 }
 
-static char *tetri_right_duck90(char *field)
+static char	*tetri_right_duck90(char *field)
 {
 	if (ft_strcmp(field, "#...\n##..\n.#..\n....\n") == 0)
 		return ("#.\n##\n.#");

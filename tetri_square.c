@@ -35,7 +35,7 @@ static char	*tetri_square0(char *field)
 	return ("#");
 }
 
-char	*tetri_square(char *field)
+char		*tetri_square(char *field)
 {
 	if (ft_strcmp(tetri_square0(field), "##\n##") == 0)
 		return ("##\n##");
